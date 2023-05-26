@@ -33,7 +33,7 @@ jobs:
 
       - name: Install Playwright browsers
         run: |
-          python -m playwright install--with-deps chromium
+          python -m playwright install --with-deps chromium
 
       - name: "Create env file"
         run: |
