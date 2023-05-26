@@ -89,8 +89,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 This project is a work in progress, and in the future, I plan to add:
 
-- Setting up a CI pipeline using GitHub Actions.
-- Using Docker containers for environment consistency.
+- Setting up a CI pipeline using GitHub Actions. ✅
+- Using Docker containers for environment consistency. ✅
 - Implementing API tests for comprehensive coverage.
 - Enhancing the UI tests to cover more scenarios.
 - Incorporating performance testing using tools such as JMeter or Locust.
