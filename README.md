@@ -99,7 +99,7 @@ This project is a work in progress, and in the future, I plan to add:
 
 If you have any questions or wish to discuss potential collaborations, feel free to reach out:
 
-- Email: rosh8442@gmail.com
+- Email: me@antonrosh.dev
 - Website: www.antonrosh.dev
 - LinkedIn: www.linkedin.com/in/antonrosh
 - GitHub: www.github.com/antonrosh
