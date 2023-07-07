@@ -51,4 +51,4 @@ def test_home_page_banner(home_page):
     text = "Choose Your Plan"
 
     home_page.go_to()
-    home_page.test_banner_text_content(text)
+    home_page.test_us_plan_section_text_content(text)
