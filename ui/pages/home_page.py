@@ -14,8 +14,8 @@ class HomePage:
         self.new_on_disney_plus_tab = page.locator("#tab-NEWONDISNEY")
         self.trending_tab = page.locator("#tab-TRENDING")
         self.coming_soon = page.locator("#tab-COMINGSOON")
-        self.banner = page.locator(
-            "//div[@class='banner-content']//p//span[@class='fine'][1]"
+        self.us_plan_section = page.locator(
+            "//section[@id='us-plan-comp']"
         )
 
     def go_to(self):
@@ -39,10 +39,10 @@ class HomePage:
         """
         Test the visibility of the banner.
         """
-        assert self.banner.is_visible()
+        assert self.us_plan_section.is_visible()
 
-    def test_banner_text_content(self, text):
+    def test_us_plan_section_text_content(self, text):
         """
         Test the text content of the banner.
         """
-        expect(self.banner).to_have_text(text)
+        expect(self.us_plan_section).to_have_text(text)
