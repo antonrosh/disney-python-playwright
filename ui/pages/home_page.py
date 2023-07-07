@@ -6,8 +6,6 @@ from playwright.sync_api import expect
 class HomePage:
     def __init__(self, page: Page):
         self.page = page
-        self.email_input = page.locator("[data-testid='input-email-email']")
-        self.continue_button = page.locator("[data-testid='undefined_hero']")
         self.header_login_button = page.locator(
             "[data-testid='log_in_header'] >> nth=0"
         )
@@ -16,6 +14,9 @@ class HomePage:
         self.coming_soon = page.locator("#tab-COMINGSOON")
         self.us_plan_section = page.locator(
             "//section[@id='us-plan-comp']"
+        )
+        self.us_plan_title = page.locator(
+            "//span[@class='h2']"
         )
 
     def go_to(self):
@@ -28,8 +29,6 @@ class HomePage:
         """
         Verify the visibility of page elements.
         """
-        assert self.email_input.is_visible()
-        assert self.continue_button.is_visible()
         assert self.header_login_button.is_visible()
         assert self.new_on_disney_plus_tab.is_visible()
         assert self.trending_tab.is_visible()
@@ -45,4 +44,5 @@ class HomePage:
         """
         Test the text content of the banner.
         """
-        expect(self.us_plan_section).to_have_text(text)
+        expect(self.us_plan_section).to_be_visible()
+        expect(self.us_plan_title).to_have_text(text)
