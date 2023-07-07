@@ -17,6 +17,9 @@ class HomePage:
         self.us_plan_section = page.locator(
             "//section[@id='us-plan-comp']"
         )
+        self.us_plan_title = page.locator(
+            "//span[@class='h2']"
+        )
 
     def go_to(self):
         """
@@ -45,4 +48,5 @@ class HomePage:
         """
         Test the text content of the banner.
         """
-        expect(self.us_plan_section).to_have_text(text)
+        expect(self.us_plan_section).to_be_visible()
+        expect(self.us_plan_title).to_have_text(text)
