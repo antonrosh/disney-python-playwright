@@ -48,7 +48,7 @@ def test_home_page_banner(home_page):
     4. Verify the text content of the banner.
     """
 
-    text = "Available via Hulu.com only. Ends 5/27. Eligibility req’s &"
+    text = "Choose Your Plan"
 
     home_page.go_to()
     home_page.test_banner_text_content(text)
